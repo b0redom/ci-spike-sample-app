@@ -1,0 +1,17 @@
+---
+resources:
+- name: resource-ci-spike-sample-app
+  type: git
+  source:
+    uri: https://github.com/kornysietsma/ci-spike-sample-app.git
+
+jobs:
+- name: test-ci-spike-sample-app
+  public: true
+  plan:
+  - get: resource-ci-spike-sample-app
+    trigger: true
+  - task: run-test
+    file: resource-ci-spike-sample-app/concourse/run_test.yml
+  - task: build-container
+    file: resource-ci-spike-sample-app/concourse/build_container.yml

@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: java
+    tag: '8'
+
+inputs:
+  - name: resource-ci-spike-sample-app
+
+run:
+  path: resource-ci-spike-sample-app/concourse/run_test.sh
