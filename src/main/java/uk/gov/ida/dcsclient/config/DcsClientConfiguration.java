@@ -1,3 +1,4 @@
+# dummy comment
 package uk.gov.ida.dcsclient.config;
 
 import io.dropwizard.Configuration;
