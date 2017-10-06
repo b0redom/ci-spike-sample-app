@@ -1,9 +1,9 @@
 language: java
 before_install:
-  - sudo add-apt-repository 'deb http://repo.aptly.info/ squeeze main'
-  - sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460
-  - sudo apt-get -qq update
-  - sudo apt-get install -y aptly
+#  - sudo add-apt-repository 'deb http://repo.aptly.info/ squeeze main'
+#  - sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460
+#  - sudo apt-get -qq update
+#  - sudo apt-get install -y aptly
 jdk:
 - oraclejdk8
 jobs:
