@@ -8,10 +8,10 @@ jdk:
 - oraclejdk8
 jobs:
   include:
-#  - stage: jar
-#    script: gradle shadowJar
   - stage: test aptly
     script: aptly version
+#  - stage: jar
+#    script: gradle shadowJar
 env:
   global:
     secure: s/wYvJpjbMnYv749eeBAUH08WjWSygfrjxfjkxuhGNFP+JE0bqMudLc5zBtUAbMLlvEre7Phsvcst5H+ytn6bCQ3WmNjnazMEM/9LrYELKgGR6e8VXIa+8RQmg2DKQIDOUBVVcUD5MWNjswXpBuufnjn6bSjywfzF3DDCC7XPmo3fo6tKx5Ra0sECbh+CwD6cTAm7lsLzqfFp6xKdSyyRuGp9xtUC42K37S3vwP+E3vbUOn7GjzUrIAfXRmWNxQLtJJJGUjRHmm0skyw/9T+oKpKq+xkQ2VMi59phHSWJALBHv1jCWqz0jRRlLmG3Jeh3s/2dvQKKHxGBcaxh4+0RIjhlpKnxiI4nC8AZ213Idhv2r9rggJSKbwYriybLC3c+yA/llu6WKrRtW7n1LRBmK351qusxcU378R57UVqpBWzFjOsmWWyXcxpUnCGe260yuUsFYnqGZ0u/+CCLCSF/gMdCr2/BUHTF4B3so4A3aXngybbA1yJVVij1dCD2A6uvmIfZuyl+FvZpVSHCxHbhhuXptIw0V31aG+qyMGCGomrKapYO86YID0r3IbRLmR7mmH/5bKRRF57niAZhLyI+j8Cq6F8U2WsFlVC/2cLnY3NG0vvfxG4V5bj6vLZkHT72b+yJ18/4+QYZAEliYJ3QXEpddoATdiuwoUh8agUiqk=$
