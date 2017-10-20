@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#here is a sample file
+#here is a sample comment
 set -e
 
 service_name='dcs-client'
