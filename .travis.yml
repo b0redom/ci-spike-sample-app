@@ -7,10 +7,6 @@ deploy:
   provider: s3
   skip_cleanup: true
 
-jobs:
-  include:
-  - stage: test aptly
-    script: aptly version
 env:
   global: 
 dd:
