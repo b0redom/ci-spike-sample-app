@@ -6,8 +6,8 @@ env:
   - secure: mqiLJELYqZSeKGPPLX4/ZCJDyiKNBauR7PH6mRBX4bXaUjjzdGLTSYDGG6M+vx0x8JLbHdcaYhI0/u5IJFIiyPKaHWxnSvqBk9VICVitw4Zhc4HBIjI0DEXYdDDSPNJBTlT1CEQr938jjKqtTG8Y8GTa11DaqbKUK8XMK6+lOwzJQz2/DpDYmP9BooAnzfNKDK/+nIpvruqelG+JYq4mbGGOTOwH1t9M1M3/HqKbHAUcsr9IHoBCo9bSSBl/rqWhvz5kk0uzm1rBpxseyR8nPS+PGo9VWmalQmpwOymBVxOUaNcfru+E0eCSZ+jbo6DsQN8sTrW48BKzg88rR4VsG6gdsI4tOXXdzKUy4bJLEgM7ZuX0Gbcgh79vCWMXZVSx1YcYqFzm6hD3zbyVWVWVZkhMkQQiHPs+pG/S/qNJnwgzLfCsknUYEfrzbrODf5ZG3FgHtvCr4+m1hpi+LoYgVPxbirkvLL7zK9Iz+mUOP4zEMR92c/fAaTeM6RaElfIXRyRypDBwduE0NIkRlzxpB2v0IK0z/fXztWOFOErXpVL3ODggsCL2r1su+IJrPzoJPNHeMJsjdT+Tl7lw/d94UcuRADIX6QVNjMQ8fSE8VA198OmrsXEqQPAJbzODc/GUzpy4WQ7SAYD2KXLaP3JBNpmNvkcq6Y3v2u/Vp5xg+9s=
 before_install:
 - pip install --user awscli
-- mkdir -p ~/shared
 - aws s3api get-object --bucket $THEBUCKET --key test.file test.file
+- cat test.file
 language: java
 jdk:
 - oraclejdk8
