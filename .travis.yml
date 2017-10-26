@@ -4,7 +4,8 @@ env:
 before_install:
 - pip install --user awscli
 - mkdir -p ~/shared
-- aws s3 get-object --bucket $thebucket --key test.file test.file
+- aws s3api get-object --bucket $thebucket --key test.file test.file
+
 language: java
 jdk:
 - oraclejdk8
