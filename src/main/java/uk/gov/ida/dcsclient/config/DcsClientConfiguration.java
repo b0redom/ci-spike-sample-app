@@ -1,4 +1,5 @@
 // dummy comment
+/* Another comment for giggles */
 package uk.gov.ida.dcsclient.config;
 
 import io.dropwizard.Configuration;
